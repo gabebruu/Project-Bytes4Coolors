@@ -155,20 +155,20 @@ export default function Bytes4Coolors() {
                 ))}
             </div>
 
-            {/* Cogumelo pulando sobre o botão */}
+            {/* Imagem do cogumelo pulando sobre o botão */}
             {cogumeloPulando && (
-                <div
+                <img
+                    src="https://www.pngarts.com/files/3/Mario-Mushroom-PNG-Pic.png"
+                    alt="Cogumelo do Mario"
                     style={{
                         position: "absolute",
-                        bottom: "100px", // altura acima do botão
+                        bottom: "80px", // altura acima do botão
                         left: "50%",
                         transform: "translateX(-50%)",
-                        fontSize: "3rem",
+                        width: "80px",
                         animation: "puloCogumelo 0.6s ease-out"
                     }}
-                >
-                    🍄
-                </div>
+                />
             )}
 
             {/* Botão flutuante transparente*/}
@@ -176,7 +176,7 @@ export default function Bytes4Coolors() {
                 onClick={gerarNovaPaleta}
                 style={{
                     position: "absolute",
-                    bottom: "50px",
+                    bottom: "25px",
                     left: "50%",
                     transform: "translateX(-50%)",
                     padding: "12px 24px",
@@ -184,10 +184,10 @@ export default function Bytes4Coolors() {
                     borderRadius: "12px",
                     cursor: "pointer",
                     backgroundColor: "transparent",
-                    color: "#c0d4c5ff",
+                    color: "#fdc1daff",
                     fontWeight: "bold",
                     fontFamily: "'Silkscreen', sans-serif", // Fonte pixelada para o botão
-                    border: "2px solid #b1c4b4ff",
+                    border: "2px solid #fab9b9ff",
                     transition: "0.3s",
                 }}
                 onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#0001"} // leve efeito no hover
